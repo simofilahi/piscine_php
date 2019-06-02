@@ -1,0 +1,222 @@
+body{
+	background-color: #505050;
+}
+
+.wrapper {
+	width: 1400px;
+    margin: auto;
+}
+
+.center_image {
+	background-color: #909090;
+	float: left;
+	padding: 9px;
+	width: 800px;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 12px;
+    box-shadow: 7px 9px 13px 3px #0c0c0c;
+}
+
+.top_image {
+	height: 130px;
+    width: 1208px;
+    position: relative;
+    padding-left: 10px;
+    margin-left: 93px;
+    border-radius: 12px;
+    background-color: #909090;
+    box-shadow: 7px 9px 13px 3px #0c0c0c;
+    padding-top: 10px;
+}
+
+.left_bar{
+	background-color: #909090;
+	float: left;
+	width: 130px;
+	height: 420px;
+	margin-left: 140px;
+	margin-right: 25px;
+	margin-top: 25px;
+	border-radius: 12px;
+	box-shadow: 7px 9px 13px 3px #0c0c0c;
+}
+
+.right_bar{
+	background-color: #909090;
+	background-color: #909090;
+	float: left;
+	width: 130px;
+	height: 420px;
+	margin-left: 25px;
+	margin-top: 25px;
+	border-radius: 12px;
+	box-shadow: 7px 9px 13px 3px #0c0c0c;
+}
+
+.footer{
+	background-color: #43ff79;
+    width: 450px;
+    position: absolute;
+    border-radius: 12px;
+    bottom: -130px;
+    left: 100px;
+    padding-top: 10px;
+    padding-bottom: 41px;
+    height: 100px;
+    box-shadow: 7px 9px 13px 3px #0c0c0c;
+}
+.arrow
+{
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+.one {
+	height: 122px;
+}
+
+.two {
+	float: right;
+	padding-right: 33px;
+}
+
+.three {
+	width: 20px;
+    top: -2px;
+    position: absolute;
+    left: 1181px;
+}
+
+
+.four {
+    width: 20px;
+    top: 100px;
+    position: absolute;
+    left: 1181px;
+}
+
+.center_image img
+{
+	 max-width: 100%;
+}
+
+.five {
+
+    height: 70px;
+    margin-left: 30px;
+    margin-bottom: 34px;
+    margin-top: 11px;
+}
+
+.six {
+
+    height: 70px;
+    margin-left: 30px;
+    margin-bottom: 32px;
+    margin-top: -30px;
+}
+.seven {
+    border: 5px solid red;
+    height: 70px;
+    margin-left: 25px;
+    margin-bottom: 34px;
+    margin-top: -29px;
+}
+.eight {
+
+    height: 70px;
+    margin-left: 34px;
+    margin-bottom: 34px;
+    margin-top: -30px;
+}
+
+.nine {
+
+    height: 70px;
+    margin-left: 28px;
+    margin-top: -32px;
+}
+
+.ten {
+
+    height: 70px;
+    width: 60px;
+    margin-left: 35px;
+    margin-top: 11px;
+    margin-bottom: 37px;
+}
+
+.eleven {
+
+    height: 44px;
+    margin-left: 34px;
+    margin-top: -32px;
+    margin-bottom: 59px
+}
+.twelve {
+
+	background-image: url(resources/brick.jpg);
+    height: 70px;
+    width: 110px;
+    margin-left: 10px;
+    margin-top: -55px;
+}
+
+.footer input {
+	width: 80%;
+	margin-left: 8px;
+}
+
+.footer p
+{
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding-left: 5px;
+}
+
+.center_image .chair {
+	width: 100px;
+    height: 100px;
+    z-index: 9999;
+    position: absolute;
+    top: 300px;
+    left: 587px;
+}
+
+.center_image .screen {
+    height: 124px;
+    width: 134px;
+    position: absolute;
+    top: 300px;
+    margin-left: 637px;
+}
+
+.top_image .disney{
+	height: 20px;
+    width: 17px;
+    margin-top: -130px;
+    position: absolute;d
+    margin-left: 1222px;
+} 
+
+.myclass {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+#design {
+    font-style: italic;
+    font-size: 14px;
+    font-family: arial;
+}
+
+#shadow {
+    line-height: 0.8;
+    text-shadow: 11px 4px 4px red;
+}
+section
+{
+    position: relative;
+    float: left;
+}

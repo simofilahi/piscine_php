@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		.input_control {	
+			background-color: #9e9e9e;
+			width: 400px;
+			height: 250px;
+			left: 50%;
+			top: 50%;
+			position: absolute;
+			transform: translate(-50%,-50%);
+			border: 1px solid black;
+			border-radius: 20%;
+			border: unset;
+			box-shadow: 6px 6px 200px;
+		}
+		.input_control h2 {
+			text-align: center;
+			font-family: 'Courier New', Courier, monospace;
+			font-size: 30px;
+		}
+		.input_control #lnum{
+			display: block;
+			text-align: center;
+			margin: auto;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			border-radius: 12px;
+			padding: 7px;
+			border: unset;
+		}
+		.input_control #op{
+			display: block;
+			text-align: center;
+			margin: auto;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			border-radius: 12px;
+			padding: 7px;
+			border: unset;
+		}
+		.input_control #rnum{
+			display: block;
+			text-align: center;
+			margin: auto;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			border-radius: 12px;
+			padding: 7px;
+			border: unset;
+		}
+		.input_control #submit{
+			display: block;
+			text-align: center;
+			margin: auto;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			border-radius: 12px;
+			padding: 7px;
+			border: unset;
+		}
+	</style>
+</head>
+<body>
+	<form class="input_control" name = "myform" onsubmit="validateform()">
+		<h2>Calculator</h2>
+		<input type="text" id="lnum">
+		<select id="op">
+			  <option name="add">+</option>
+			  <option name="sub">-</option>
+			  <option name="mul">*</option>
+			  <option name="div">/</option>
+			  <option name="mod">%</option>
+		</select>
+		<input type="text" id="rnum">
+		<input type="submit" name="submit" value="Try me!" id = "submit">
+	</form>
+	<script>
+		function use_alert()
+		{
+			window.alert("Please, use me...");
+		}
+		setInterval(use_alert, 30000);
+		function specialtoken(token)
+		{
+			if (token == "/" || token == "%")
+				return 1;
+			return 0;
+		}
+		function validateform()
+		{
+			var _n1 = document.myform.lnum.value;
+			var _op = document.myform.op.value;
+			var _n2 = document.myform.rnum.value;
+			if ((_n1 == "" || _n2 == "") || (_n1.includes('.') || _n2.includes('.')))
+						alert("Error :(");
+			else
+			{
+				_n1 = Number(_n1);
+				_n2 = Number(_n2);
+				if (!isNaN(_n1) && !isNaN(_n2))
+				{
+					if (_n1 >= 0 && _n2 >= 0)
+					{
+						if (_n2 == 0 && specialtoken(_op))
+						{
+							console.log("It’s over 9000!");
+							alert("It’s over 9000!");
+						}
+						else
+						{
+							var sum = 0;
+							if (_op == "*")
+								sum = _n1 * _n2;
+							else if (_op == "/")
+								sum = _n1 / _n2;
+							else if (_op == "%")
+								sum = _n1 % _n2;
+							else if (_op == "+")
+								sum = _n1 + _n2;
+							else if (_op == "-")
+								sum = _n1 - _n2;
+							console.log(sum);
+							alert(sum);
+						}
+					}
+					else
+						alert("Error :(");
+				}
+				else
+					alert("Error :(");
+			}
+		}
+	</script>
+</body> 
+</html>

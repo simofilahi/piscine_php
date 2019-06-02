@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		#balloon {
+			height: 200px;
+			width: 200px;
+			background-color: red;
+			border-radius: 50%;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+	</style>
+</head>
+<body>
+	<div id="balloon" onclick="ONClick()" onmouseleave="INLeave()"></div>
+	<script>
+		var mydivobj = document.getElementById("balloon");
+
+		function ONClick()
+		{
+			var curColour = window.getComputedStyle(mydivobj,null).getPropertyValue("background-color");
+			var curheight = mydivobj.clientHeight;
+			var curwidth = mydivobj.clientWidth;
+
+			if (curheight >= 420 && curwidth >= 420)
+			{
+				mydivobj.style.height = 200 + "px";
+				mydivobj.style.width = 200 + "px";
+			}
+			else
+			{
+				mydivobj.style.height = curheight +  10 + "px";
+				mydivobj.style.width = curwidth +  10 + "px";
+			}
+			if (curColour == 'rgb(255, 0, 0)')
+				mydivobj.style.backgroundColor = 'green';
+			else if (curColour == 'rgb(0, 128, 0)')
+				mydivobj.style.backgroundColor = 'blue';
+			else if (curColour == 'rgb(0, 0, 255)')
+				mydivobj.style.backgroundColor = 'red';
+		}
+		function INLeave()
+		{
+			var curColour = window.getComputedStyle(mydivobj,null).getPropertyValue("background-color");
+			var curheight = mydivobj.clientHeight;
+			var curwidth = mydivobj.clientWidth;
+			
+			if (curheight > 200 && curwidth > 200)
+			{
+				mydivobj.style.height = curheight -  5 + "px";
+				mydivobj.style.width = curwidth -  5  + "px";
+			}
+			if (curColour == 'rgb(0, 0, 255)')
+				mydivobj.style.backgroundColor = 'green';
+			else if (curColour == 'rgb(0, 128, 0)')
+				mydivobj.style.backgroundColor = 'red';
+			else if (curColour == 'rgb(255, 0, 0)')
+				mydivobj.style.backgroundColor = 'blue';
+		}
+	</script>
+</body>
+</html>

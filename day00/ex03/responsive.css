@@ -1,0 +1,66 @@
+.center {
+		  margin: auto;
+		  width: 50%;
+}
+td {
+		border: 1px solid black;
+		position: relative;
+		text-align: center;
+}
+table {
+		width: 100%;
+		height: 100%;
+}
+.Weight {
+		text-align: right;
+		font-size: 1vw;
+		margin-top: 0px;
+}
+.token {
+		text-align: center;
+}
+.number {
+		text-align: left;
+		font-size: 1vw;
+		margin-bottom: 0px;
+}
+#no_border{
+		border: none;
+}
+.token {
+		font-weight: bold;
+		font-size: 1vw;
+}
+.red {
+		background-color: #FF6666;
+}
+.orange {
+		background-color: #FFDEAD;
+}
+.yellow {
+		background-color: #F0FF8F;
+}
+.boldred{
+		background-color: #FFBFBF;
+}
+.grey{
+		background-color: #CCCCCC;
+}
+.grey1 {
+		background-color: #E8E8E8;
+}
+.green {
+		background-color: #CCCB99;
+}
+.rose1 {
+		background-color: #FFBFFF;
+}
+.rose2 {
+		background-color: #ff92ce;
+}
+.skyblue {
+		background-color: #C0FFFF;
+}
+.no_border{
+		border: none;
+}
